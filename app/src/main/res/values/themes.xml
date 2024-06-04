@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RunOut2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor" >@color/green</item>//esto es para cambiarle el color de la barra de notificaciones donde aprece la hora y asi
+        <item name="windowActionBar">false</item>//
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RunOut2" parent="Base.Theme.RunOut2" />
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        app:srcCompat="@mipmap/banner" />
+
+    <TextView
+        android:id="@+id/txtInvitation"
+        style="@style/viewCustom"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:text="@string/Invitation"
+        android:textColor="@color/orange"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/viewCustom"
+        android:layout_height="63dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="30dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/viewCustom"
+        android:backgroundTint="@color/white"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/tvLogin"
+        style="@style/viewCustom"
+        android:layout_height="48dp"
+        android:background="#0D9F13"
+        android:onClick="login"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        style="@style/viewCustom"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:onClick="forgotPassword"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/ForgotPassword"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/lyTerms"
+        style="@style/viewCustom"
+        android:layout_marginTop="0dp"
+        android:background="@color/gray_dark"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbAcept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acept"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="goTerms"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/terms"
+            android:textColor="@color/salmon_dark"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btSignFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/facebook"
+        android:paddingLeft="30dp"
+        android:text="@string/facebook"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnSignGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/google"
+        android:paddingLeft="30dp"
+        android:text="@string/google"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:onClick="callSignInGoogle"/>
+
+</LinearLayout>
